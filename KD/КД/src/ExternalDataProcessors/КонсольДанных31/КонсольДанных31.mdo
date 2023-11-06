@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8555043-848d-4a19-a332-d899ae9af753">
+  <producedTypes>
+    <objectType typeId="692f3234-763e-4ad0-8a2d-4f8e31286859" valueTypeId="652313f0-9c41-415d-984f-83d40672f9ca"/>
+  </producedTypes>
+  <name>КонсольДанных31</name>
+  <synonym>
+    <key>ru</key>
+    <value>Консоль данных 3.1</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="8bc7b165-68fc-4262-8f90-6edad959c151"/>
+  <defaultForm>ExternalDataProcessor.КонсольДанных31.Form.Форма</defaultForm>
+  <auxiliaryForm>ExternalDataProcessor.КонсольДанных31.Form.УФорма</auxiliaryForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="5bc9a51d-bcd0-4860-b993-a08de268694c">
+    <name>Алгоритмы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алгоритмы</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="684b5a90-8e9a-4726-8733-11c11c25f89a">
+    <name>Удалить_Буфер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить буфер</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="72d3b0b1-e77f-40db-b47b-3b0c03f26670">
+    <name>ВОЛНА_ОбщегоНазначенияВС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВОЛНА общего назначения ВС</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ae1003ca-f60c-40aa-a176-6c834f3327de">
+    <name>ВОЛНА_ОбщегоНазначенияКС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВОЛНА общего назначения КС</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c053e152-6c50-4276-97ca-6b01a5d4a9e3">
+    <name>ВОЛНА_ОбщегоНазначенияПовтИспСеансВС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВОЛНА общего назначения повт исп сеанс ВС</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="15bb2df4-bc8b-466b-8450-dbc4e7294b0f">
+    <name>ВОЛНА_ОбщегоНазначенияСервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВОЛНА общего назначения сервер</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6bd641e5-55a4-42f4-afcc-7777f749b280">
+    <name>Удалить_ВстроенныеКоманды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить встроенные команды</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="072090a6-300e-467a-afd5-c7b6aa6a5e18">
+    <name>Удалить_ДеревоМД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить дерево МД</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3eb5ad08-b4e0-4350-b51f-8d645a745447">
+    <name>Удалить_ДеревоКоманд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить дерево команд</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c4fe8fd4-57c5-4766-b73c-b4d99460aec1">
+    <name>Удалить_ДопТаблица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп. таблица</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5d37ef71-6a48-4faa-bfd8-ee882b99d0a9">
+    <name>Удалить_Запрос_</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить запрос</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5baca6b2-fcdc-449e-b4ed-4e3ef1c9866e">
+    <name>ИспользоватьМВТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать МВТ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f5fb6c49-96c9-44e7-a87d-0879613a4df3">
+    <name>Удалить_КаталогСохраненияКоманд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить каталог сохранения команд</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1bbe2d7a-794f-4375-961a-2e334a030002">
+    <name>Удалить_МВТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить МВТ</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="26c19c1f-4622-49e0-869e-4f4d8df68974">
+    <name>Удалить_Настройки_</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить настройки</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="19a3c3be-641f-4956-9a83-ec54146c93b8">
+    <name>Удалить_НастройкиСКД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить настройки СКД</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2a3e06cf-5dcf-41d6-940f-235c2434a70d">
+    <name>Удалить_Параметры_</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить параметры</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="135fd9e2-4297-4fa3-b50f-5ca9f298d7be">
+    <name>Удалить_Предмет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить предмет</value>
+    </synonym>
+    <type>
+      <types>StandardBeginningDate</types>
+      <types>StandardPeriod</types>
+      <types>ValueList</types>
+      <types>Boolean</types>
+      <types>String</types>
+      <types>Color</types>
+      <types>Date</types>
+      <types>Number</types>
+      <types>TypeDescription</types>
+      <types>AnyRef</types>
+      <numberQualifiers>
+        <precision>31</precision>
+        <scale>7</scale>
+      </numberQualifiers>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bf16cc0d-fb6e-4f87-a3a6-15560f1b67a2">
+    <name>Удалить_СКД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить СКД</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="907b4bd2-f276-49d6-8f03-c2ac14b466db">
+    <name>Удалить_СохранённыеКоманды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить сохранённые команды</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a86bd793-0c16-4912-b6d5-88d7098b8132">
+    <name>Удалить_СписокЗначенийПараметров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить список значений параметров</value>
+    </synonym>
+    <comment>Для чего - забыл??? Не понимаю???</comment>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="773c0355-fd65-4a44-b3f9-81801faef3af">
+    <name>Удалить_ТабДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить таб документ</value>
+    </synonym>
+    <type>
+      <types>SpreadsheetDocument</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ceef5cdc-da9a-455c-9a8e-fef0fbee76ce">
+    <name>Удалить_ТабЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица значений</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3897c62b-dc0e-4d3b-af5a-72b81d91bf1c">
+    <name>Удалить_ТекстЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить текст запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f9a7555c-c43f-45b9-af2e-962cf2a39382">
+    <name>Удалить_ТекстКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить текст кода</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a14b2dd3-a614-42c1-b4a4-b4c6cf3b16c7">
+    <name>Удалить_Файл_</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить файл</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a8cd693c-b0b4-4267-826e-a64eb3609a5e">
+    <name>Удалить_ЧАКО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить ЧАКО</value>
+    </synonym>
+    <comment>Частые команды</comment>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="545585ba-42f1-4647-b8bf-5549099d87f9">
+    <name>Удалить_ЭтоУП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить это УП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ba6b69de-8f13-422b-a568-f9ed9c177313">
+    <name>УФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>У-форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9ccaeec0-c17d-4012-98f2-f1e648479239">
+    <name>ВыборИзДерева</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор из дерева</value>
+    </synonym>
+    <comment>Форма выбора из дерева значений, в том числе групповой</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4f171f35-d127-486f-af90-399ef8f6e88a">
+    <name>УФормаСохраненияКоманды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма сохранения команды</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fb1bcf85-2a36-4f80-b7b1-42b1cc1aa518">
+    <name>МодульКлиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль клиент</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4fa30c4a-cb54-4500-9ef5-28082981fa25">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9544d14e-4ba1-48bd-8dab-f4ba463c9814">
+    <name>ФормаДереваКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма дерева конфигурации</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d03b989e-d075-4686-8796-d87300a27dcd">
+    <name>ФормаСохраненияКоманды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма сохранения команды</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="388d63c4-62f5-4fc3-ba57-d765ac175517">
+    <name>ФормаДереваКоманд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма дерева команд</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="94222b0e-d9b4-4f55-a8cb-2611a07806b8">
+    <name>Удалить_УФормаВыбораИзДерева</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора из дерева (упр)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="99c3310c-79f2-470e-8179-4f9014b2b708">
+    <name>Удалить_УФормаДереваКоманд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма дерева команд</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="03f8c6c5-806a-4d6f-b2dc-a79d7838923c">
+    <name>СтруктураКоманд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура команд</value>
+    </synonym>
+  </templates>
+  <templates uuid="1bb1eb10-4f7b-4ee9-9b31-29972be166e1">
+    <name>Команды_</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команды</value>
+    </synonym>
+  </templates>
+  <templates uuid="36f958f0-1c88-4036-b16d-7a8430eb61cb">
+    <name>МодульВС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль ВС</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="29d285cc-af03-4987-976d-e87ade2c5839">
+    <name>МодульКлиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль клиент</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="298c527b-8598-45d0-ba07-18e5ed900979">
+    <name>МодульКС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль КС</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="39caa85e-786e-405d-bc02-0932068dd67d">
+    <name>МодульПовтИсп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль повт исп</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="9864f7e7-f520-4a2a-9ac8-02abead51c17">
+    <name>МодульСервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль сервер</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="6e84f122-2d07-41b4-a4a8-ca8b30d9784b">
+    <name>ТекстМодуля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст модуля</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="c7408318-3b32-41d1-8c40-5b4b3f33d790">
+    <name>КоллекцияКартинок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коллекция картинок</value>
+    </synonym>
+  </templates>
+  <templates uuid="758f98f2-b116-4b8f-acf7-9d22b9aeb5a4">
+    <name>КартинкиБиблиотеки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Картинки библиотеки</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="d88f38c1-651e-4b33-9e88-b2715a5587b7">
+    <name>Карантин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карантин</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:ExternalDataProcessor>

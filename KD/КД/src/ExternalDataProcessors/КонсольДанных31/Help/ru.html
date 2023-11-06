@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.9600.17842"></meta></head><body>
+<p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Обработка разработана Персиановым М.С. (2017).<o:p></o:p></span></p>
+
+<p><span style="font-family: Verdana, sans-serif; font-size: 8.5pt;">В 2023 полнофункционально адаптирована под
+управляемые формы.</span></p>
+<p>Использование обработки не допускается, если обработка не куплена у автора, или автор не давал согласия на её использование. Согласие автора на бесплатное использование обработки может быть в любое время отозвано без объяснения причин. Автор не несёт ответственности за ошибки алгоритмов, но гарантирует бесплатное исправление ошибок в обработке (без каких-либо обязательств по срокам и исправлению последствий применения ошибочных алгоритмов). Данная обработка является инструментом, который должен применяться с должной осмотрительностью. Все алгоритмы не могли быть проверены по причине большого объёма проверки. Предполагается, что работать с обработкой должен специалист достаточно квалифицированный, чтобы не допустить нежелательной потери данных. Если Вы не согласны с этими условиями, не следует использовать эту обработку. Автор будет благодарен за замечания по обработке. Принятые замечания будут исправлены совершенно бесплатно.</p>
+<p>Обработка является мощным инструментом работы с данными.</p>
+<h1>Интерфейс.</h1>
+<div>Вид окна в управляемом и обычном приложении различается незначительно.</div>
+<p><img src="_files/КДнадп.jpg"></img></p>
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Общее описание.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Интерфейс состоит из двух текстовых полей
+и меню. Поле кода предназначено для написания произвольного кода на языке 1С, Поле
+запроса - для редактирования запроса (но может тоже содержать
+исполняемый код). Есть два окна таблиц значений: основной и
+дополнительной. Окно табличного документа объединено с окном дополнительной
+таблицы. Окно предмета обработки предназначено для выбора произвольного
+ссылочного объекта. Ещё одно окно предназначено для формирования структуры
+параметров (имя параметра в левом столбце, значение - в правом). Значением
+может быть простое или ссылочное значение, список значений, вычисляемая формула
+или ссылка на одну из таблиц значений.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Выбор команды из меню.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Все кнопки полей снабжены всплывающими
+подсказками.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Вторая слева кнопка над окном кода -
+кнопка меню команд. По её нажатию откроется дерево команд. При выборе строки
+дерева и нажатии кнопки Сформировать команда будет выполнена. В большинстве
+случаев результатом команды будет вставка текста в окно кода. Но некоторые
+команды выполняются сразу и могут изменить данные (например, выполнение или
+комментирование кода).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В обработке есть макеты СтруктураКоманд и
+Команды_, отвечающие за состав команд и их расположение в меню. Но команды
+могут быть настроены и из пользовательского режима с помощью сохранения
+команды.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Сохранение команды.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В дереве команд есть возможность добавить
+или удалить команду. Удаление команды выполняется соответствующей кнопкой.
+Удаление предопределённой команды возможно, оно технически исполняется с
+помощью добавления «антикоманды». При выполнении добавляемой команды будут
+восстановлены те элементы интерфейса, которые были включены в команду при
+сохранении. Выполнения кода или запроса при этом не происходит.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Другие функции меню<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Заполнение параметров<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Возможно автоматическое заполнение
+структуры параметров по текстам запроса и кода (кнопки с синей стрелкой вниз в
+меню над окнами запроса и кода).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Вставка из конфигурации<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Левая кнопка меню над окном кода и такая
+же кнопка над окном запроса позволяет вставить в текст кода или запроса имя
+объекта конфигурации (справочника, реквизита, табличной части,  и т.д.).<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Вставка директивы<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Директивы предназначены для разбиения
+кодов на разделы. Каждый раздел может выполняться на клиенте и сервере на
+форме, в модуле объекта или на клиенте в специальной закрытой форме, либо быть
+вызываемым алгоритмом – аналогом функции.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Вставка вызова алгоритма<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Вставляется код с примерами вызова
+алгоритмов. Лишнее убрать напильником.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Преобразование текста<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Есть кнопки
+комментирования/раскомментирования и преобразования текста заппроса в литерал,
+вставляемый в код, и обратно.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Библиотеки<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Есть кнопки вставки в поля вызова функций
+и запросов из библиотек.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Прочие кнопки<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Кнопки выполнения запроса и кода (слева и
+справа), включения/отключения МВТ, вывода временной таблицы или результата выполнения
+элемента пакета в таблицу, а также вывода СКД в табличный документ и таблицу
+значений, и вызов конструктора СКД.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Дополнительная панель<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">На дополнительной панели в центре окна
+есть кнопки вывода реквизитов Предмета в таблицу значений, а также вывода
+спозиционированной в таблице табчасти Предмета во вторую таблицу значений, и
+обратная запись изменённых реквизитов. Рядом кнопки копирования в специальный
+буфер значения активного элемента, и обратная вставка из буфера.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 9pt; font-family: Verdana, sans-serif;">Панель частых команд (ЧАКО)<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Панель содержит семь кнопок, запоминающих
+последние выполненные команды для быстрого повторного выполнения. Кнопки можно
+настроить и зафиксировать на закладке настроек.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Окно кода.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Окно кода предназначено для формирования
+исполняемого кода на языке 1С.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Директивы кода<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Кроме исполняемого кода, в тексте могут
+быть использованы директивы:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&amp;Клиент - последующий код (до следующей директивы)
+будет выполнен вне контекста основной формы на клиенте<br>
+&amp;Форма - последующий код (до следующей директивы) будет выполнен в форме на
+клиенте<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">&amp;Сервер - последующий код будет
+выполнен в форме на сервере<br>
+&amp;Объект - последующий код будет выполнен в модуле обработки<br>
+&amp;Алгоритм - последующий код не будет выполнен, но будет обособлен как
+алгоритм. При этом именем алгоритма будет первое слово после &amp;Алгоритм (оно
+не войдёт в состав кода алгоритма). Тексты кода алгоритмов будут храниться в
+структуре Алгоритмы, доступной при выполнении кода. Алгоритм вызывается функциями ВызватьАлгоритмКлиент/ВызватьАлгоритмФорма/ВызватьАлгоритмСервер/ВызватьАлгоритмОбъект(Алгоритмы[Имя],
+Прм_), где Прм_ - структура, ключи которой будут доступны в вызываемом
+алгоритме как переменные.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Вызовы доступны из контекстов:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ВызватьАлгоритмКлиент - с клиента и из
+формы<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ВызватьАлгоритмФорма - из формы<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ВызватьАлгоритмСервер - из формы и с
+сервера<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">ВызватьАлгоритмОбъект - из формы, с
+сервера и из объекта<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Структура Алгоритмы доступна из всех
+контекстов.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Структура СПарам формируется из таблицы
+параметров. При этом для выполнения в неё могут быть подставлены таблцы,
+произвольный код, и т.д., но по завершении кода/запроса исходные параметры не
+обновляются. Добавленные в коде параметры появятся и в форме.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Также доступны ДопТаблица, Запрос,
+НастройкиСКД, Предмет, СКД, СПарам, ТабДокумент, ТабЗначений, ТекстЗапроса,
+ТекстКода - значения берутся из формы до начала и возвращаются после окончания
+алгоритма.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Вставка имени<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В коде можно использовать имена реквизитов
+обработки или элементов интерфейса. С помощью меню можно вставить в код любое
+из этих имён. Например, имя основной таблицы значений - ТабЗначений, имя
+предмета обработки - Предмет, а имя структуры параметров - СПарам. Кроме того,
+в тексте доступны менеджер временных таблиц МВТ, схема компоновки данных СКД и
+некоторые другие объекты.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Комментарии.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">С помощью кнопок меню можно комментировать
+или раскомментировать текст кода или запроса. Для этого строки должны быть
+выделены полностью.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Выполнение.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Выполнение кода производится кнопкой
+"Сформировать" с зелёным треугольником.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Окно запроса<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Окно предназначено для редактирования
+текста запроса или исполняемого кода. В случае формирования кода действуют все
+правила, применяемые для окна кода, включая директивы.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Преобразования текста.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Текст запроса или отдельные его строки
+могут быть закомментированы, раскоменнтированы, преобразованными в текст
+запроса в коде и обратно с помощью кнопок меню.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Конструктор запроса.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Для редактирования запроса доступен
+конструктор запроса. Для его запуска следует использовать кнопку меню над окном
+запроса.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Работа с менеджером внутренних таблиц.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Запрос  можно выполнять с
+использованием менеджера временных таблиц или без него. Для включения МВТ есть
+кнопка над окном запроса. Также в меню есть функция вывода таблицы МВТ в
+таблицу значений. МВТ вместе с таблицами также доступен из кода.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 0cm; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Выполнение запроса/кода<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Выполнение кода производится кнопкой
+"Сформировать" с зелёным треугольником.<br>
+Выполнение Запроса производится кнопкой "Сформировать" с синим
+треугольником.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Работа с СКД<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">В обработке есть возможность работы со
+схемой компоновки данных, доступной из кода под именем "СКД". Кнопки
+меню справа над окном запроса предназначены для работы с СКД. Функци,
+выведенные на кнопки:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1.Конструктор СКД<br>
+2.Вывод результата работы СКД в таблицу значений<br>
+3.Вывод результата работы СКД в табличный документ<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Работа с буфером<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Обработка предоставляет возможность работы
+со встроенным буфером обмена. Он позволяет скопировать любое значение внутри
+обработки в любое место (например, из таблицы значений в структуру параметров).
+Меню для работы с буфером расположено слева над окном запроса.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Загрузка/сохранение предмета обработки<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Правее окна предмета расположены кнопки,
+позволяющие открыть реквизиты Предмета в таблице значений, а при
+спозиционированном на табчасти курсоре в таблице значений - скопировать
+табчасть в доп. таблицу. Там же кнопки, позволяющие сохранить объект с
+реквизитами/табчастью из таблиц значений.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Работа с библиотекой функций<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Одна из функций, доступных из меню -
+открытие библиотеки функций. При использовании БФ функции модуля обработки
+автоматически распознаются и выводятся в меню, а выбранная в меню функция
+помещается в область кода с комментариями и параметрами.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 13.5pt; font-family: Verdana, sans-serif;">Макеты обработки<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Некоторые настройки обработки заданы
+макетами:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">СтруктураКоманд - расположение команд в
+меню обработки.<br>
+Команды_ - Настройка команд: выполняемый код, имя, представления, картинки...<br>
+КоллекцияКартинок - коллекция используемых в интерфейсе картинок. К сожалению,
+в тонком клиенте не работает, поэтому в УФ используются только библиотечные
+картинки.<br>
+КартинкиБиблиотеки - список имён библиотечных картинок.<br>
+ТекстМодуля - текстовый документ, в который скопирован модуль обработки (в
+части библиотеки функций). Служит для распознавания и вывода в меню функций
+модуля.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 13.5pt; font-family: Verdana, sans-serif;">Пример работы с
+обработкой<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Задача<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Вывести в таблицу Excel список документов
+(дата и номер). В эту таблицу пользователи введут свои ФИО, и их надо будет
+загрузить в документы.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Решение<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">1.Сформировать запрос (воспользоваться
+конструктором, кнопкой заполнения параметров, ввести параметры). Выполнить
+запрос.<o:p></o:p></span></p>
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">2.</span><span style="font-family: Verdana, sans-serif; font-size: 8.5pt;">В меню функций найти
+"Проставить УИД построчно". Во вставленном коде поменять имя
+реквизита и выполнить код. Получится таблица с номером, датой, ссылкой и УИД.
+После сохранения в Excel Ссылку можно удалить, а УИД - скрыть.</span></p>
+
+<h2>
+</h2><p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><img src="_files/КДзапрос1.jpg" style="font-size: 11.199999809265137px;"></img></p>
+<p>3.Выбрать в меню функцию распознавания таблицы значений по табличному документу. Если параметры функции непонятны, можно найти её в библиотеке функций - она будет выведена со всеми параметрами и комментариями.</p>
+<p><img src="_files/КД3.jpg" width="842" height="619"></img></p>
+<p>4.Полученный заполненный файл Excel перенести в табличный документ, как показано выше. Указанный на скрине вариант будет искать ФИО сначала в справочнике физлиц, а потом - в справочнике сотрудников. После выполнения кода данные ТД будут распознаны в таблицу значений. Надо будет проверить, что распознались все сотрудники.</p>
+<p>5.Найти в меню функций функцию построчной обработки таблицы с корректировкой реквизита шапки, выполнить команду, поправить и выполнить код. Всё, готово.</p>
+<p> <b><span style="font-size: 13.5pt; font-family: Verdana, sans-serif;">Сохранение
+настроек и команд</span></b></p>
+
+<p class="MsoNormal" style="margin: 12pt 0cm 4.8pt; line-height: normal; background-position: initial initial; background-repeat: initial initial;"><b><span style="font-size: 12pt; font-family: Verdana, sans-serif;">Виды сохраняемых настроек<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Текущие настройки могут быть сохранены и
+удалены с закладки Настройки. Текущие настройки восстаналиваются при открытии
+обработки, сохраняются при закрытии и с указанной на закладке Настройки
+частотой автосохранения. Для отключения автосохранения надо установить
+максимальный интервал. В этом случае не произойдёт сохранение при закрытии.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Настройки могут быть сохранены по имени.
+Для этого надо ввести имя и нажать кнопку сохранения рядом с именем. При этом
+будет возможность выбрать сохраняемые компоненты. Имя настроек отобразится в
+списке имён.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Настройки могут быть сохранены и в
+выбранный файл.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Настройки могут быть сохранены как общие (для
+всех пользователей – нужны права админа) или только для себя.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">При восстановлении сначала применяются
+типовые настройки, на них – общие, на них – настройки текущего пользователя.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Восстановить можно и настройки выбранного
+пользователя, но надо знать их имя, т.к. чужие настройки не запоминаются.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="line-height: normal; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 8.5pt; font-family: Verdana, sans-serif;">Также можно восстановить настройки из
+файла.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><o:p> </o:p></p></body></html>
