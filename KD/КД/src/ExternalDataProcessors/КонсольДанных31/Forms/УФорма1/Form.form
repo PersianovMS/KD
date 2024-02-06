@@ -2,7 +2,7 @@
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <title>
     <key>ru</key>
-    <value> </value>
+    <value>Консоль данных</value>
   </title>
   <items xsi:type="form:FormGroup">
     <name>ГруппаСтраниц</name>
@@ -5038,41 +5038,6 @@
     <valueType>
       <types>String</types>
       <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>АдресНастроекСКД</name>
-    <title>
-      <key>ru</key>
-      <value>Адрес настроек СКД</value>
-    </title>
-    <id>29</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
-  <attributes>
-    <name>БезКонтекста</name>
-    <title>
-      <key>ru</key>
-      <value>Без контекста</value>
-    </title>
-    <id>31</id>
-    <valueType>
-      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>

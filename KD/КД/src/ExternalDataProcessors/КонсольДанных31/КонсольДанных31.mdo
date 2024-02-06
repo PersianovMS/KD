@@ -26,46 +26,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="72d3b0b1-e77f-40db-b47b-3b0c03f26670">
-    <name>ВОЛНА_ОбщегоНазначенияВС</name>
-    <synonym>
-      <key>ru</key>
-      <value>ВОЛНА общего назначения ВС</value>
-    </synonym>
-    <type/>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="ae1003ca-f60c-40aa-a176-6c834f3327de">
-    <name>ВОЛНА_ОбщегоНазначенияКС</name>
-    <synonym>
-      <key>ru</key>
-      <value>ВОЛНА общего назначения КС</value>
-    </synonym>
-    <type/>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="c053e152-6c50-4276-97ca-6b01a5d4a9e3">
-    <name>ВОЛНА_ОбщегоНазначенияПовтИспСеансВС</name>
-    <synonym>
-      <key>ru</key>
-      <value>ВОЛНА общего назначения повт исп сеанс ВС</value>
-    </synonym>
-    <type/>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="15bb2df4-bc8b-466b-8450-dbc4e7294b0f">
-    <name>ВОЛНА_ОбщегоНазначенияСервер</name>
-    <synonym>
-      <key>ru</key>
-      <value>ВОЛНА общего назначения сервер</value>
-    </synonym>
-    <type/>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="5baca6b2-fcdc-449e-b4ed-4e3ef1c9866e">
     <name>ИспользоватьМВТ</name>
     <synonym>
@@ -152,6 +112,15 @@
       <value>Форма дерева команд</value>
     </synonym>
     <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4661cdf0-8674-4af0-8660-40c9a16c36d9">
+    <name>УФорма1</name>
+    <synonym>
+      <key>ru</key>
+      <value>У-форма</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
